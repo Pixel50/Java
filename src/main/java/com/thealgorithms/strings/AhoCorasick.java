@@ -108,7 +108,7 @@ public final class AhoCorasick {
                 q.add(childNode); // Add child node to the queue
                 childNode.setSuffixLink(root); // Set suffix link to the root
             }
-        }
+        }// initializeSuffixLinksForChildNodesOfTheRoot
 
         private void buildSuffixAndOutputLinks() {
             root.setSuffixLink(root); // Initialize the suffix link of the root to itself
